@@ -1,0 +1,54 @@
+// GENERAL
+.um-wrapper {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  will-change: transform;
+  perspective: 400px;
+  transition: all 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.um-section {
+  will-change: transform;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100%);
+  transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+  background: $color-4 url(../img/bg-main.jpg) top left no-repeat;
+  background-size: cover;
+}
+
+.section--hidden {
+  transform: translateX(-100%);
+}
+
+.section--active {
+  transform: translateX(0) rotateY(0);
+  z-index: $zIndex-2;
+}
+
+.um-card {
+  width: 63%;
+  height: 86%;
+  top: 25px;
+  background-color: $color-5;
+  position: relative;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: $mq-large) {
+  .um-card {width: 70%;}
+}
+
+@media only screen and (max-width: $mq-small) {
+  .um-card {height: calc(100%-60px); top: 35px; width: 80%;}
+}
+

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ivan - minimal resume template</title> <!-- Change title here -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Minimal resume template" /> <!-- Change description here -->
+    <meta name="author" content="Units Mine" /> <!-- Change author name here -->
+
+    <!-- FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.min.css" />
+  </head>
+
+  <body>
+
+  <div class="um-logo um-menu__item" title="your logo">
+    <a href="" class="um-menu__link"></a> <!-- Logo leads to quote page, like "homepage" -->
+  </div>
+
+  <nav class="um-menu  menu--active">                                              <!-- NAVIGATION -->
+    <ul class="um-menu__list">
+      <li class="um-menu__item nav__item" style="display: none">
+        <a href="" class="um-menu__link">
+          <p class="um-menu__label"></p>
+        </a>
+      </li>
+      <li class="um-menu__item nav__item">
+        <a href="" class="um-menu__link">
+          <p class="um-menu__label">ABOUT</p>
+        </a>
+      </li>
+      <li class="um-menu__item nav__item">
+        <a href="" class="um-menu__link">
+          <p class="um-menu__label">WORK</p>
+        </a>
+      </li>
+      <li class="um-menu__item nav__item">
+        <a href="" class="um-menu__link">
+          <p class="um-menu__label"><i class="icon-email"></i></p>
+        </a>
+      </li>
+    </ul>
+    <div class="um-burger burger--close">
+      <div class="um-burger__cross"></div>
+    </div>
+  </nav>                                                                            <!-- end NAVIGATION -->
+
+  <main class="um-wrapper" id="um-wrapper">
+    <section class="um-section um-quote section--active">                           <!-- section QUOTE -->
+      <article class="um-main__title">
+        <h1>MAKING SIMPLE THINGS</h1> <!-- add your quote of preference here -->
+        <h4>unforgettable</h4>
+      </article>
+
+      <div class="um-qr">
+        <h4>SHARE CV</h4>
+        <div id="qrcode" data-url="http://kodeguild.com"></div> <!-- change to your website url inside "data-url" attribute -->
+      </div>
+    </section>                                                                      <!-- end section QUOTE -->
+
+    <section class="um-section um-about">                                           <!-- section ABOUT -->
+      <article class="um-card card-about um-clearfix scrolled">
+        <div class="um-profile">
+          <div class="um-name">
+            <h4>Eva Hilmarsson</h4>
+            <p>art director</p>
+          </div>
+          <div class="um-avatar">
+            <img src="assets/img/avatar.jpg" alt="profile avatar">
+          </div>
+        </div>
+        <div class="um-intro">
+          Hi, <br>
+          I’m a <span>photographer</span> and <span>creative director</span> from Iceland, currently
+          located in Edinburgh. I’m into lorem ipsum dolor sit amet. Nam sagittis nisi dui. Suspendisse lectus
+           leo. Duis elementum rutrum mauris sed convallis.
+        </div>
+
+        <div class="card-about__main">
+          <div class="um-timeline"> <!-- begin timeline -->
+            <h4>past</h4>
+            <p>
+              2010 — Graduated from the University of Iceland in Reykjavík<br>
+              2011 — Photographer at Digital Solutions<br>
+              2012-2013 — Worked as videographer in modeling agency<br>
+            </p>
+            <h4>now</h4>
+            <p>2014 - present — art director at WeAreJuice</p>
+          </div> <!-- end timeline -->
+          <input class="um-skillcheck" id="skillcheck" type="checkbox" /> <!-- begin skills -->
+          <div class="um-skills">
+            <label  for="skillcheck">
+              <div class="um-skill__front">
+                <span class="icon-square"></span>
+                <h4>skills</h4>
+                  <p><span class="um-skillbar"></span>Commercials</p>
+                  <p><span class="um-skillbar"></span>Promo campaigns</p>
+                  <p><span class="um-skillbar"></span>Coordination</p>
+                  <h4>services</h4>
+                  <p><span class="um-service"></span>Photo production</p>
+                  <p><span class="um-service"></span>Video production</p>
+                  <p><span class="um-service"></span>Visual branding</p>
+              </div>
+              <div class="um-skill__back">
+                <span class="icon-back"></span>
+                <h4>tools</h4>
+                  <p><span><i class="icon-levelin"></i>After Effects</span> <span><i class="icon-levelin"></i>Adobe Premiere</span></p>
+                  <p><span><i class="icon-levelin"></i>Photoshop</span> <span><i class="icon-levelin"></i>Exposure</span></p>
+                  <p><span><i class="icon-levelin"></i>iMovie</span> <span><i class="icon-levelin"></i>brainstorming</span></p>
+                  <p><span><i class="icon-levelin"></i>Final Cut Pro</span> <span><i class="icon-levelin"></i>camera</span></p>
+                <h4>interests</h4>
+                  <p><i class="icon-levelout"></i>fashion</p>
+                  <p><i class="icon-levelout"></i>climbing</p>
+              </div>
+            </label>
+          </div> <!-- end skills -->
+          <div class="um-langs"> <!-- begin languages -->
+            <h4>languages</h4>
+            <p>
+              <i class="icon-quadro"></i> Icelandic;
+              <i class="icon-quadro"></i> English;
+              <i class="icon-quadro"></i> Spanish
+            </p>
+          </div> <!-- end languages -->
+          <div class="um-social"> <!-- begin social -->
+              <a href="" target="_blank" title="youtube"><i class="icon-youtube"></i></a> <!-- insert your links here -->
+              <a href="" target="_blank" title="vimeo"><i class="icon-vimeo"></i></a> <!-- see assets/fonts/icons-reference to choose icons-->
+              <a href="" target="_blank" title="flickr"><i class="icon-flickr"></i></a>
+              <a href="" target="_blank" title="twitter"><i class="icon-twitter"></i></a>
+              <a href="assets/test-ivan-resume.pdf" target="_blank" class="um-download"><i class="icon-download"></i> resume</a>
+          </div> <!-- end social -->
+        </div>
+      </article>
+    </section>                                                                        <!-- end section ABOUT -->
+
+    <section class="um-section um-work">                                              <!-- section WORK -->
+      <article class="um-card card-work um-clearfix scrolled">
+        <div class="um-workfilter filters"> <!-- filters -->
+          <div data-toggle="buttons" class="btn-group">
+            <label class="btn btn-primary active" data-filter="">
+              <input type="radio" id="option1" name="options" style="display: none;"> all
+            </label>
+            <label class="btn btn-primary" data-filter="photo">
+              <input type="radio" id="option2" name="options" style="display: none;"> photo
+            </label>
+            <label class="btn btn-primary" data-filter="video">
+              <input type="radio" id="option3" name="options" style="display: none;"> video
+            </label>
+          </div>
+        </div>
+        <div id="grid-gallery" class="um-gallery">
+          <section class="grid-wrap">
+            <ul class="grid">
+              <li class="grid-sizer"></li> <!-- for Masonry column width -->
+              <li class="item" data-filter="photo">
+                <figure><span><img src="assets/img/work/work-1.jpg" alt=""></span></figure>
+              </li>
+              <li class="item" data-filter="photo">
+                <figure><span><img src="assets/img/work/work-2.jpg" alt=""></span></figure>
+              </li>
+              <li  class="item" data-filter="photo">
+                <figure><span><img src="assets/img/work/work-3.jpg" alt=""></span></figure>
+              </li>
+              <li class="item" data-filter="photo">
+                <figure><span><img src="assets/img/work/work-4.jpg" alt=""></span></figure>
+              </li>
+              <li class="item" data-filter="video">
+                <figure><span><img src="assets/img/work/work-5.jpg" alt=""></span></figure>
+              </li>
+               <li class="item" data-filter="photo">
+                <figure><span><img src="assets/img/work/work-6.jpg" alt=""></span></figure>
+              </li>
+            </ul>
+          </section> <!-- end grid-wrap -->
+        </div> <!-- end grid-gallery -->
+      </article>
+    </section>
+    <section class="slideshow">
+      <ul>
+        <li>
+          <figure class="um-workdetails scrolled">
+            <figcaption>
+              <h3>PROJECT A</h3>
+              <p><span>DATE</span> 03-12-2015</p>
+              <p><span>CLIENT</span> X-Group</p>
+              <p><span>DESCRIPTION</span> Hoc unicum template creatum pro omne bonum gens. Speramus id facit vita facile, et id committere cum novum populus. Tibi gratias ago pro emere ex UnitsMine, revertemur ad maiorem from templates.</p>
+              <p><span>VIEW</span> <a href="https://duckduckgo.com" target="_blank">some link</a></p>
+              <img src="assets/img/work/work-1.jpg" alt="">
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="um-workdetails scrolled">
+           <figcaption>
+              <h3>PROJECT B</h3>
+              <p><span>DATE</span> 03-12-2015</p>
+              <p><span>CLIENT</span> personal project</p>
+              <p><span>DESCRIPTION</span> Hoc unicum template creatum pro omne bonum gens. Speramus id facit vita facile, et id committere cum novum populus. Tibi gratias ago pro emere ex UnitsMine, revertemur ad maiorem from templates.</p>
+              <p><span>VIEW</span> <a href="https://duckduckgo.com" target="_blank">some link</a></p>
+              <div class="video-player">
+                <iframe src="https://player.vimeo.com/video/158780754?title=0&amp;byline=0&amp;portrait=0" width="500" height="281"></iframe>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="um-workdetails scrolled">
+            <figcaption>
+              <h3>PROJECT C</h3>
+              <p><span>DATE</span> 03-12-2015</p>
+              <p><span>CLIENT</span> ViewTwo Channel</p>
+              <p><span>DESCRIPTION</span> Hoc unicum template creatum pro omne bonum gens. Speramus id facit vita facile, et id committere cum novum populus. Tibi gratias ago pro emere ex UnitsMine, revertemur ad maiorem from templates.</p>
+              <p><span>VIEW</span> <a href="https://duckduckgo.com" target="_blank">some link</a></p>
+              <img src="assets/img/work/work-3.jpg" alt="">
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="um-workdetails scrolled">
+            <figcaption>
+              <h3>PROJECT D</h3>
+              <p><span>DATE</span> 03-12-2015</p>
+              <p><span>CLIENT</span> JustDoItt Music Band</p>
+              <p><span>DESCRIPTION</span> Hoc unicum template creatum pro omne bonum gens. Speramus id facit vita facile, et id committere cum novum populus. Tibi gratias ago pro emere ex UnitsMine, revertemur ad maiorem from templates.</p>
+              <p><span>VIEW</span> <a href="https://duckduckgo.com" target="_blank">some link</a></p>
+              <img src="assets/img/work/work-4.jpg" alt="">
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="um-workdetails scrolled">
+            <figcaption>
+              <h3>PROJECT E</h3>
+              <p><span>DATE</span> 03-12-2015</p>
+              <p><span>CLIENT</span> Hotel Spa Resort</p>
+              <p><span>DESCRIPTION</span> Hoc unicum template creatum pro omne bonum gens. Speramus id facit vita facile, et id committere cum novum populus. Tibi gratias ago pro emere ex UnitsMine, revertemur ad maiorem from templates.</p>
+              <p><span>VIEW</span> <a href="https://duckduckgo.com" target="_blank">some link</a></p>
+              <img src="assets/img/work/work-5.jpg" alt="">
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="um-workdetails scrolled">
+            <figcaption>
+              <h3>PROJECT F</h3>
+              <p><span>DATE</span> 03-12-2015</p>
+              <p><span>CLIENT</span> NY XYZ Studio</p>
+              <p><span>DESCRIPTION</span> Hoc unicum template creatum pro omne bonum gens. Speramus id facit vita facile, et id committere cum novum populus. Tibi gratias ago pro emere ex UnitsMine, revertemur ad maiorem from templates.</p>
+              <p><span>VIEW</span> <a href="https://duckduckgo.com" target="_blank">some link</a></p>
+              <img src="assets/img/work/work-6.jpg" alt="">
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+      <nav>
+        <span class="icon-left um-prev nav-prev"></span>
+        <span class="icon-right um-next nav-next"></span>
+        <span class="icon-close um-close nav-close"></span>
+      </nav>
+    </section>                                                                        <!-- end section WORK -->
+
+    <section class="um-section um-contact">                                           <!-- section CONTACT -->
+      <article class="um-card card-contact um-clearfix scrolled">
+        <i class="um-stripes"></i>
+        <form id="um-form" class="um-clearfix" role="form" action="">
+          <legend>LET'S WORK TOGETHER</legend>
+            <input type="text" id="name" name="name" required placeholder="Name">
+            <input type="email" id="email" name="email" required placeholder="Email">
+            <textarea id="message" name="message" rows="5" spellcheck="false" required placeholder="Message"></textarea>
+            <button id="um-sendmsg" type="submit">SEND MESSAGE</button>
+        </form>
+      </article>
+    </section>                                                                        <!-- end section CONTACT -->
+  </main>
+
+  <!-- SCRIPTS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="assets/scripts/main.min.js"></script>
+
+  </body>
+</html>
+

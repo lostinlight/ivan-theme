@@ -1,0 +1,31 @@
+.um-errorpage {
+  background-color: $color-5;
+}
+
+.um-error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 40%;
+  text-align: center;
+}
+
+.um-error h1 {
+  color: $color-1;
+  margin-bottom: 1em;
+}
+
+.um-error .back-btn {
+  border-bottom: 1px solid $color-1;
+    &:hover {color: $color-3;}
+}
+
+.um-error__social {
+  position: absolute;
+  width: 100%;
+  bottom: -6em;
+  text-align: center;
+  padding: 0;
+}

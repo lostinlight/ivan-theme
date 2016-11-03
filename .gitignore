@@ -1,0 +1,7 @@
+/_private
+.DS_Store
+.env
+/resume-1/node_modules/*
+/resume-2/node_modules/*
+/resume-3/node_modules/*
+/docs/*

@@ -1,0 +1,55 @@
+
+// QUOTE
+.video-bg {
+  background: none;
+}
+
+.video-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video {
+  display: block;
+}
+
+.um-main__title {
+  width: 100%;
+  margin-bottom: 2em;
+  text-align: center;
+  color: $color-1;
+}
+
+.um-main__title h1 {
+  font-size: 2.8rem;
+  word-spacing: .2em;
+}
+
+.um-main__title h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  opacity: .8;
+}
+
+.um-qr {
+  width: 62px;
+  height: 100px;
+  position: absolute;
+  bottom: 1em;
+  left: 2em;
+}
+
+.um-qr h4 {
+  color: $color-1;
+  text-align: center;
+}
+
+.um-qr canvas {
+  opacity: .8;
+  border: 1px solid $color-1;
+}

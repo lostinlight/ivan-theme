@@ -1,0 +1,150 @@
+.um-menu {
+  opacity: 1;
+  will-change: transform;
+  position: absolute;
+  top: 0;
+  right: 1%;
+  width: 260px;
+  height: 60px;
+  z-index: $zIndex-1;
+}
+
+.um-menu__list {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  margin: 0 auto;
+  transition: all 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.nav__item {
+  flex: 33.3333% 0 0;
+  position: relative;
+  height: 36px;
+  transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.um-menu__link {
+  color: $color-1;
+  font-weight: bold;
+}
+
+.um-menu__label {
+  position: relative;
+  width: 46px;
+  letter-spacing: 2px;
+  margin: 0 auto;
+}
+
+.um-menu__label:before {
+  background: $color-2 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 1px;
+  position: absolute;
+  transform: scaleX(0) translateZ(0px);
+  transform-origin: 0 0 0;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+  width: 39px;
+}
+
+.um-menu__item:nth-child(2) .um-menu__label {
+  width: 55px;
+    &:before {
+      width: 47px;
+    }
+}
+
+.um-menu__item:nth-child(4) .um-menu__label:before {
+  display: none;
+}
+
+.um-menu__label > i,
+.um-menu__label > i:before,
+.um-menu__label > i:after {
+  font-size: 1.9rem;
+  line-height: .8;
+}
+
+.um-menu__item:nth-child(4):hover i {color: $color-2;}
+
+.um-menu__label:hover:before,
+.um-active:before {
+  transform: scaleX(1) translateZ(0px);
+}
+
+.um-burger {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 46px;
+  height: 50px;
+  background: black;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+    &:hover {
+      background: darken($color-5, 4%);
+    }
+}
+
+.um-burger.burger--close {
+  background: lighten($color-4, 5%);
+}
+
+.um-burger__cross {
+  position: relative;
+  width: 60%;
+  height: 1px;
+  background: $color-1;
+  transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.um-burger__cross:before,
+.um-burger__cross:after {
+  will-change: transform;
+  content: "";
+  position: absolute;
+  left: 0;
+  background: $color-1;
+  height: 1px;
+  width: 100%;
+  transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.um-burger__cross:before {
+  top: -10px;
+}
+
+.um-burger__cross:after {
+  top: 10px;
+}
+
+.burger--close .um-burger__cross {
+  background: lighten($color-4, 5%);
+}
+
+.burger--close .um-burger__cross:before {
+  transform: scale(.17, 5) translateY(.08em);
+  background: $color-7;
+}
+
+.burger--close .um-burger__cross:after {
+  transform: scale(.17, 5) translateY(-.08em);
+  background: $color-8;
+}
+
+@media only screen and (max-width: $mq-small) {
+  body:before {content: "menu--active";}
+  main:before {content: "burger--close";}
+  .um-menu {right: 0; text-align: right; height: 50px; width: calc(100% - 46px);}
+  .um-menu__list {background: $color-5; border-bottom: 1px solid black;}
+  .um-burger {opacity: 1; visibility: visible; transform: translateX(0);}
+  .um-menu__label:before {width: 42px;}
+  .um-menu__list {position: absolute; right: 46px; height: 50px; width: 100%; transform: translateY(-50px); text-align: center;}
+  .um-menu.menu--active .um-menu__list {transform: translateY(0);}
+}

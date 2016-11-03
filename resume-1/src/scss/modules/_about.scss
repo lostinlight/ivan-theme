@@ -1,0 +1,426 @@
+.card-about {
+  background: transparent;
+}
+
+.card-about__main {
+  background: $color-5;
+  width: 100%;
+}
+
+// PROFILE
+.card-about__main, .um-profile, .um-intro, .um-name, .um-avatar, .um-timeline, .um-skills, .um-social {
+  float: left;
+}
+
+.um-intro, .um-avatar, .um-timeline, .um-skills, .um-social, .um-langs {
+  text-align: left;
+}
+
+.um-profile {
+  width: 47%;
+}
+
+.um-intro {
+  width: 53%;
+  background: $color-4;
+  padding: 2.5em 2em;
+}
+
+.um-profile, .um-intro {
+  height: 200px;
+  color: $color-1;
+}
+
+.um-name, .icon-quadro {
+  background: $gradient-one;
+}
+
+.um-name {
+  padding-top: 3em;
+  text-align: center;
+}
+
+.um-avatar {
+  background-color: $color-1;
+  text-align: center;
+}
+
+.um-avatar > img {
+  max-height: 200px;
+  width: auto;
+}
+
+.um-name, .um-avatar {
+  width: 50%;
+  height: 200px;
+}
+
+.um-name h4 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.um-name p {
+  padding-left: .7em;
+  font-size: 1.15rem;
+}
+
+.um-intro span {
+  font-weight: 700;
+}
+
+// TIMELINE
+.um-timeline, .um-skills, .um-langs {
+  color: $color-2;
+  margin-top: 13px;
+}
+
+.um-timeline, .um-langs {
+  line-height: 2;
+}
+
+.um-timeline, .um-social {
+  padding: 2.5em .5em 1em 2.5em;
+}
+
+.um-timeline, .um-social {
+  width: 57%;
+}
+
+.um-timeline h4, .um-skills h4, .um-langs h4 {
+  margin: .8em 0;
+  color: $color-2;
+}
+
+.um-timeline h4:after, .um-skills h4:after, .um-langs h4:after {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 2px;
+  background: $color-3;
+}
+
+.um-timeline p {
+  padding-left: .8em;
+}
+
+// SKILLS
+.um-skills, .um-langs {
+  width: 43%;
+  background: $color-4;
+}
+
+.um-skills {
+  height: 280px;
+  cursor: pointer;
+  perspective: 1000px;
+  position: relative;
+}
+
+.um-skills > label {
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.um-skillcheck {display: none;}
+
+.um-skill__front,
+.um-skill__back {
+  float: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+
+.um-skill__front {
+  transform: rotateY(0deg);
+}
+
+.um-skill__back {
+  transform: rotateY(180deg);
+}
+
+#skillcheck:checked + .um-skills .um-skill__front {
+  transform: rotateY(-180deg);
+}
+
+#skillcheck:checked + .um-skills .um-skill__back {
+  transform: rotateY(0deg);
+}
+
+.icon-square, .icon-back {
+  position: absolute;
+  right: 0;
+  margin-right: 1.5em;
+  margin-top: 1.5em;
+  cursor: pointer;
+  color: $color-2;
+}
+
+.um-skill__back p span {
+  width: 120px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.um-skills h4 {
+  line-height: 2;
+}
+
+.um-skill__front h4:first-of-type  {
+  margin: .7em 0 0 2.5em;
+}
+
+.um-skill__front h4:last-of-type  {
+  margin: .4em 0 0 2.5em;
+}
+
+.um-skill__back h4 {
+  margin: .6em 0 .5em 2.5em;
+}
+
+.um-skills p {
+  padding: 0 10px 0 50px
+}
+
+.um-skillbar {
+  margin-right: 1.3em;
+}
+
+.um-skillbar:before,
+.um-skillbar:after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  display: inline-block;
+  margin-bottom: .3em;
+  box-shadow: 0 -1px 4px;
+  color: $color-4;
+}
+
+.um-skillbar:before {
+  background-color: $color-7;
+  left: 0;
+}
+
+.um-skillbar:after {
+  background-color: $color-8;
+  left: 20px;
+}
+
+.um-service {
+  width: 25px;
+  height: 3px;
+  background: $color-7;
+  display: inline-block;
+  position: relative;
+  left: 1.9em;
+  margin-right: 5em;
+  box-shadow: 0 -1px 4px;
+}
+
+.um-service,
+.um-service:before,
+.um-service:after {
+  color: $color-4;
+}
+
+.um-service:before,
+.um-service:after {
+  content: "";
+  width: 25px;
+  height: 3px;
+  display: inline-block;
+  position: absolute;
+  box-shadow: 0 -1px 4px;
+}
+
+.um-service:before {
+  left: -25px;
+  background-color: $color-6;  ;
+}
+
+.um-service:after {
+  background-color: $color-3;
+  left: 25px;
+}
+
+.icon-levelin, .icon-levelin:before, .icon-levelin:after,
+.icon-levelout, .icon-levelout:before, .icon-levelout:after {
+  display: inline-block;
+  width: 4px;
+  border-radius: 2px 2px 0 0;
+  vertical-align: middle;
+  box-shadow: 0 -1px 4px;
+}
+
+.icon-levelin, .icon-levelin:before, .icon-levelin:after {
+  color: #8aa9e3;
+  background: $gradient-two;
+}
+
+.icon-levelin, .icon-levelout {
+  margin-right: 1.3em;
+}
+
+.icon-levelin {
+  height: 11px;
+}
+
+.icon-levelin:before, .icon-levelin:after,
+.icon-levelout:before, .icon-levelout:after {
+  content: "";
+  position: relative;
+}
+
+.icon-levelin:before, .icon-levelout:before {
+  left: -7px;
+}
+
+.icon-levelin:after, .icon-levelout:after {
+  left: 7px;
+}
+
+.icon-levelin:before {
+  height: 7px;
+  bottom: 7px;
+}
+
+.icon-levelin:after {
+  height: 15px;
+  top: -35px;
+}
+
+.icon-levelout, .icon-levelout:before, .icon-levelout:after {
+  color: #8aa9e3;
+  background: $gradient-three;
+}
+
+.icon-levelout {
+  height: 13px;
+}
+
+.icon-levelout:before {
+  height: 7px;
+  bottom: 5px;
+}
+
+.icon-levelout:after {
+  height: 8px;
+  top: -30px;
+}
+
+// SOCIAL
+.um-social {
+  padding: 2.5em .5em 1em 2.5em;
+}
+
+.um-social i {
+  margin: 0 .2em;
+}
+
+.um-social a:nth-child(odd) > i {
+  color: $color-8;
+}
+
+.um-social a:nth-child(even) > i {
+  color: $color-7;
+}
+
+.um-social a:hover > i {color: $color-1;}
+
+.um-social a.um-download {
+  float: right;
+  font-size: .8rem;
+  letter-spacing: .1em;
+  border-bottom: 1px solid $color-3;
+  padding: .1em 4px .1em 0;
+  margin-right: 2em;
+  margin-top: -4px;
+}
+
+.um-social a.um-download > i {
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+// LANGUAGES
+.um-langs {
+  height: auto;
+  float: right;
+  padding: 0 .5em 2em 1.5em;
+}
+
+.um-langs > h4 {
+  padding-left: 1em;
+}
+
+.icon-quadro {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 .5em 0 1.1em;
+  vertical-align: middle;
+}
+
+.icon-quadro:not(:first-child) {margin-left: .5em;}
+
+@media only screen and (max-width: $mq-large) {
+  .um-skills p {padding: 0 10px 0 40px;}
+  .icon-levelin, .icon-levelout {height: 4px; margin-right: .5em;}
+  .icon-levelin:before, .icon-levelin:after, .icon-levelout:before, .icon-levelout:after {display: none;}
+}
+
+@media only screen and (max-width: $mq-medium) {
+  .um-profile, .um-intro, .um-timeline, .um-skills, .um-langs, .um-social {width: 100%; margin: 0;}
+  .um-profile {background: $gradient-one;}
+  .um-name, .um-avatar {background: none; text-align: right;}
+  .um-name {width: 60%; padding-top: 99px;}
+  .um-avatar {width: 40%; padding-right: 1.5em; padding-top: 20px; }
+  .um-name h4 {text-align: right;}
+  .um-avatar > img {border-radius: 50%; max-height: 70px; width: auto; border: 3px solid $color-6;}
+  .um-skills p {padding: 0 0 0 33%}
+  .um-timeline {padding-top: 1em;}
+  .um-social {padding-top: 2em;}
+  .icon-levelin:before, .icon-levelin:after, .icon-levelout:before, .icon-levelout:after {display: inline-block;}
+  .icon-levelin, .icon-levelout {margin-right: 1.5em;}
+  .icon-levelin {height: 11px;}
+  .icon-levelout {height: 13px;}
+}
+
+@media only screen and (max-width: $mq-small) {
+  .um-social {padding-top: 1.1em; margin-bottom: .4em;}
+  .um-intro {padding: 1em 1.5em; height: auto;}
+  .um-skills {height: 288px;}
+  .um-skills p {padding: 0 0 0 20%;}
+  .um-skill__front h4, .um-skill__front h4:first-of-type,.um-skill__front h4:last-of-type {margin: .6em 0 1em 2em;}
+  .um-timeline, .um-social {padding-right: 2em;}
+  .um-timeline p {padding-left: 0;}
+  .um-langs {height: auto; padding: 0 1em 1.5em 1em;}
+  .um-langs > h4 {margin-top: 0;}
+}
+
+@media only screen and (max-width: $mq-xsmall) {
+  .um-name {padding-top: 125px;}
+  .um-skillset span, .icon-quadro {display: none;}
+  .icon-levelin, .icon-levelout {height: 4px;}
+  .icon-levelin:before, .icon-levelin:after, .icon-levelout:before, .icon-levelout:after {display: none;}
+  .um-skills p {padding-left: 2em;}
+  .um-skill__back {line-height: 1.9;}
+  .um-langs p {padding-left: 1.5em;}
+}
+
+@media only screen and (max-width: $mq-xxsmall) {
+  .um-skills {height: 380px;}
+  .um-skill__front h4:first-of-type {margin-top: 4em;}
+  .um-skill__front h4:last-of-type {margin-top: 3em;}
+}
